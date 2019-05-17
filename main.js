@@ -5,20 +5,19 @@ function createTable() {
 
   var arrHead = new Array(); //Array for table head
   arrHead = ["num1", "times", "num2", "Ans"];
-
   var arrValue = new Array(); //Table values
-  arrValue.push([1, "x", 1, "=", ""]);
-  arrValue.push([1, "x", 2, "="]);
-  arrValue.push([1, "x", 3, "="]);
-  arrValue.push([1, "x", 4, "="]);
-  arrValue.push([1, "x", 5, "="]);
-  arrValue.push([1, "x", 6, "="]);
-  arrValue.push([1, "x", 7, "="]);
-  arrValue.push([1, "x", 8, "="]);
-  arrValue.push([1, "x", 9, "="]);
-  arrValue.push([1, "x", 10, "="]);
-  arrValue.push([1, "x", 11, "="]);
-  arrValue.push([1, "x", 12, "="]);
+  arrValue.push([1, "x", 1, "<input>"]);
+  arrValue.push([1, "x", 2, "<input>"]);
+  arrValue.push([1, "x", 3, "<input>"]);
+  arrValue.push([1, "x", 4, "<input>"]);
+  arrValue.push([1, "x", 5, "<input>"]);
+  arrValue.push([1, "x", 6, "<input>"]);
+  arrValue.push([1, "x", 7, "<input>"]);
+  arrValue.push([1, "x", 8, "<input>"]);
+  arrValue.push([1, "x", 9, "<input>"]);
+  arrValue.push([1, "x", 10, "<input>"]);
+  arrValue.push([1, "x", 11, "<input>"]);
+  arrValue.push([1, "x", 12, "<input>"]);
 
   var tr = table.insertRow(-1);
 
@@ -55,7 +54,7 @@ function getTableValues() {
       //row cells
       div.innerHTML = div.innerHTML + "" + multTable.rows[b].cells[c].innerHTML; //add data to div
     }
-    div.innerHTML = div.innerHTML + "<br/>";
+    div.innerHTML = div.innerHTML + "submit" + "<br/>";
   }
   document.body.appendChild(div); //Add or append container to body
 }

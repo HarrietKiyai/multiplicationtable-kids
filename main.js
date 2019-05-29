@@ -1,75 +1,39 @@
-function createTable() {
-  var table = document.createElement("table");
+window.onload = function() {
+  createTable();
+};
 
-  table.setAttribute("id", "multTable"); // Creates ids
-
-  var arrHead = new Array(); //Array for table head
-  arrHead = ["num1", "times"];
-  var arrValue = new Array(); //Table values
-  arrValue.push(["1 x 1", "<input>"]);
-  arrValue.push(["1 x 2", "<input>"]);
-  arrValue.push(["1 x 3", "<input>"]);
-  arrValue.push(["1 x 4", "<input>"]);
-  arrValue.push(["1 x 5", "<input>"]);
-  arrValue.push(["1 x 6", "<input>"]);
-  arrValue.push(["1 x 7", "<input>"]);
-  arrValue.push(["1 x 8", "<input>"]);
-  arrValue.push(["1 x 9", "<input>"]);
-  arrValue.push(["1 x 10", "<input>"]);
-  arrValue.push(["1 x 11", "<input>"]);
-  arrValue.push(["1 x 12", "<input>"]);
-
-  var tr = table.insertRow(-1);
-
-  //Table head
-  for (var i = 0; i < arrHead.length; i++) {
-    var th = document.createElement("th");
-    th.innerHtml = arrHead[i];
-    tr.appendChild(th);
-  }
-
-  for (var a = 0; a <= arrValue.length - 1; a++) {
-    tr = table.insertRow(-1);
-
-    for (var j = 0; j < arrHead.length; j++) {
-      var td = document.createElement("td");
-      td = tr.insertCell(-1);
-      td.innerHTML = arrValue[a][j]; //Add table values
+/*function createTable() {
+  var table1 = "";
+  var i;
+  for (i = 1; i <= 12; i++) {
+    for (a = 1; a <= 12; a++) {
+      table1 += "<li>" + i + "x " + a + " = " + i * a + "</li>";
+      document.getElementById("tab1").innerHTML = table1;
     }
   }
-  document.body.appendChild(table); //Insert to body
-}
-
-function getTableValues() {
-  var multTable = document.getElementById("multTable");
-
-  //Create table div element
-  var div = document.createElement("div");
-  div.innerHTML = "";
-  div.innerHTML = "<br/>";
-
-  for (var b = 1; b <= multTable.rows.length - 1; b++) {
-    //table rows
-    for (a = 0; a <= multTable.rows[b].cells.length - 1; a++) {
-      //row cells
-      div.innerHTML = div.innerHTML + "" + multTable.rows[b].cells[c].innerHTML; //add data to div
-    }
-    div.innerHTML = div.innerHTML + "<br/>";
-  }
-  document.body.appendChild(div); //Add or append container to body
-
-  /*var myVar = document.getElementById("multTable");
-var arrValue = "";
-for (i = 1; i <= 12; i++) {
-  arrValue += i + " x " + [i] + " = " + i * [] + "\n";
-
-  console.log(arrValue);
 }*/
-  var numbers2 = arrValue.map(myFunction);
 
-  document.getElementById("product").innerHTML = numbers2;
+function createTable() {
+  var table1 = "";
+  var table2 = "";
+  var table3 = "";
+  var table4 = "";
+  var table5 = "";
+  var table6 = "";
 
-  function myFunction(value, index, arrValue) {
-    return value * 1;
+  var i;
+  for (i = 1; i <= 12; i++) {
+    table1 += "<li>" + i + "x " + 1 + " = " + i * 1 + "</li>";
+    document.getElementById("tab1").innerHTML = table1;
+    table2 += "<li>" + i + "x " + 2 + " = " + i * 2 + "</li>";
+    document.getElementById("tab2").innerHTML = table2;
+    table3 += "<li>" + i + "x " + 3 + " = " + i * 3 + "</li>";
+    document.getElementById("tab3").innerHTML = table3;
+    table4 += "<li>" + i + "x " + 4 + " = " + i * 4 + "</li>";
+    document.getElementById("tab4").innerHTML = table4;
+    table5 += "<li>" + i + "x " + 5 + " = " + i * 5 + "</li>";
+    document.getElementById("tab5").innerHTML = table5;
+    table6 += "<li>" + i + "x " + 6 + " = " + i * 6 + "</li>";
+    document.getElementById("tab6").innerHTML = table6;
   }
 }

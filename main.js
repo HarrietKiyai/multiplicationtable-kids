@@ -1,17 +1,6 @@
-window.onload = function() {
+window.onload = function () {
   createTable();
 };
-
-/*function createTable() {
-  var table1 = "";
-  var i;
-  for (i = 1; i <= 12; i++) {
-    for (a = 1; a <= 12; a++) {
-      table1 += "<li>" + i + "x " + a + " = " + i * a + "</li>";
-      document.getElementById("tab1").innerHTML = table1;
-    }
-  }
-}*/
 
 function createTable() {
   var table1 = "";
@@ -36,4 +25,23 @@ function createTable() {
     table6 += "<li>" + i + "x " + 6 + " = " + i * 6 + "</li>";
     document.getElementById("tab6").innerHTML = table6;
   }
+
+
+  $(document).ready(function () {
+    $("#check").click(function () {
+      var a = parseInt($("#num1").val());
+      var b = parseInt($("#num2").val());
+      if ($("#ans").val() == (a * b)) {
+        return ($("#right").html("Well done!"));
+      } else {
+        return $("#wrong").html("Try again!");
+      }
+
+    });
+  });
+
+  $("input:text").focus(
+    function () {
+      $(this).val('');
+    });
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>  
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -43,7 +41,17 @@
           <span class="tag is-danger is-medium">Table 6</span>
           <ul id="tab6"></ul>
         </div>
+        <div >
+          <h3>Try it yourself</h3>
+          <form id="this" autocomplete="off"></form>
+          <input id="num1" type="text" value=""></input> x <input id="num2" type="text" value=""></input> = <input id="ans" type="text" value=""></input><br/>
+          </form>
+          <button id="check">Check Answer</button>
+        <p id="right"></p> 
+        <p id="wrong"></p>
+        </div>
       </div>
     </div>
+    
   </body>
 </html>

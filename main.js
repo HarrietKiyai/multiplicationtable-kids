@@ -44,4 +44,11 @@ function createTable() {
     function () {
       $(this).val('');
     });
+
+  $('body').css('background-image', 'url("para.png")');
+  $(".container").css("background-color", "#DEF2F1");
+}
+
+function goBack() {
+  window.history.back();
 }

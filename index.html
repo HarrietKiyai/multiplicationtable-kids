@@ -12,44 +12,55 @@
   </head>
   <body>
     <div class="container">
-      <div class="notification is-success">
+      <div class="tile is-vertical">
+      <header class="notification is-success">
         <h1 class="title">Learn your Multiplication</h1>
         <h2 class="subtitle">Math can be fun after all!</h2>
-      </div>
-      <div class="columns">
-        <div class="column">
+        <a href="#quiz"> FUN QUIZ </a>
+      </header>
+    </div>
+      <div class= "tile is-parent" >
+        <div class="tile is-child box">
           <span class="tag is-medium is-primary">Table 1</span>
           <ul id="tab1"></ul>
         </div>
-        <div class="column">
+        <div class="tile is-child box">
           <span class="tag is-link is-medium">Table 2</span>
           <ul id="tab2"></ul>
         </div>
-        <div class="column">
+        <div class="tile is-child box">
           <span class="tag is-info is-medium">Table 3</span>
           <ul id="tab3"></ul>
         </div>
-        <div class="column">
+        <div class="tile is-child box">
           <span class="tag is-success is-medium">Table 4</span>
           <ul id="tab4"></ul>
         </div>
-        <div class="column">
+        <div class="tile is-child box">
           <span class="tag is-warning is-medium">Table 5</span>
           <ul id="tab5"></ul>
         </div>
-        <div class="column">
+        <div class="tile is-child box">
           <span class="tag is-danger is-medium">Table 6</span>
           <ul id="tab6"></ul>
         </div>
-        <div >
+      </div>
+      <div class="tile is-parent is-vertical">
+        <footer id="quiz" class="notification is-info quiz">
           <h3>Try it yourself</h3>
           <form id="this" autocomplete="off"></form>
-          <input id="num1" type="text" value=""></input> x <input id="num2" type="text" value=""></input> = <input id="ans" type="text" value=""></input><br/>
+          <input class="input is-success" id="num1" type="text" value=""></input><br/>
+          <button class="button is-link">X</button><br/>
+          <input class=" input is-warning" id="num2" type="text" value=""></input><br/>
+          <button class="button is-link">=</button><br/>
+          <input class=" input is-danger" id="ans" type="text" value=""></input><br/>
           </form>
-          <button id="check">Check Answer</button>
-        <p id="right"></p> 
-        <p id="wrong"></p>
-        </div>
+          <p id="right"></p> 
+          <p id="wrong"></p>
+          <button class="button is-warning" id="check">Check Answer</button>
+          <button class="button is-success" onclick="goBack()"> Back to Tables</button><br/>
+          
+        </footer>
       </div>
     </div>
     

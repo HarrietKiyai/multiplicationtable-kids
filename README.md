@@ -6,3 +6,4 @@ Build 1 to 12 multiplcation tables for children
 - [x] A little styling with bulma
 - [x] Implemented input functionality using jquery
 - [x] Implemented styling using jquery
+- [x] Implemented alink to a quiz page

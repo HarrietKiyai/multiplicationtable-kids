@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function() {
   createTable();
 };
 
@@ -25,27 +25,31 @@ function createTable() {
     table6 += "<li>" + i + "x " + 6 + " = " + i * 6 + "</li>";
     document.getElementById("tab6").innerHTML = table6;
   }
+  $(".box").css("background-color", "#ff00ff");
+  $("header").css("background-color", "#FF6666");
+  $("h1,h2").css("text-align", "center", "color", "blue");
 
-
-  $(document).ready(function () {
-    $("#check").click(function () {
+  $(document).ready(function() {
+    $("#check").click(function() {
       var a = parseInt($("#num1").val());
       var b = parseInt($("#num2").val());
-      if ($("#ans").val() == (a * b)) {
-        return ($("#right").html("Well done!"));
+      if ($("#ans").val() == a * b) {
+        return $("#right")
+          .html("Well done!")
+          .css("background-color", "green");
       } else {
-        return $("#wrong").html("Try again!");
+        return $("#wrong")
+          .html("Try again!")
+          .css("background-color", "red");
       }
-
     });
   });
 
-  $("input:text").focus(
-    function () {
-      $(this).val('');
-    });
+  $("#num1").submit(function() {
+    $(this).val("");
+  });
 
-  $('body').css('background-image', 'url("para.png")');
+  $("body").css("background-image", 'url("para.png")');
   $(".container").css("background-color", "#DEF2F1");
 }
 

@@ -8,6 +8,6 @@ body {
     margin: 25px;
 }
 
-.quiz {
-    background-color: aquamarine;
+#quiz {
+    background-color: #bf00ff;
 }

@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
   createTable();
 };
 
@@ -29,24 +29,7 @@ function createTable() {
     .css("background-color", "#ff00ff")
     .css("border-radius", "25px");
   $("header").css("background-color", "#FF6666");
-  $("h1,h2,h3").css("text-align", "center", "color", "blue");
-
-  $(document).ready(function() {
-    $("#check").click(function() {
-      alert("test");
-      var a = parseInt($("#num1").val());
-      var b = parseInt($("#num2").val());
-      if ($("#ans").val() == a * b) {
-        return $("#right")
-          .html("Well done!")
-          .css("background-color", "green");
-      } else {
-        return $("#wrong")
-          .html("Try again!")
-          .css("background-color", "red");
-      }
-    });
-  });
+  $("h1,h2").css("text-align", "center", "color", "blue");
 
   $("body").css("background-image", 'url("bubs.png")');
   $(".container").css("background-color", "#DEF2F1");

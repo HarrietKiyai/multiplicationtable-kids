@@ -1,4 +1,4 @@
-<!DOCTYPE html5>  
+<!DOCTYPE html5>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,20 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <div class="tile is-vertical">
-      <header class="notification is-success">
-        <h1 class="title">Learn your Multiplication</h1>
-        <h2 class="subtitle">Math can be fun after all!</h2>
-        <a href="#quiz"> FUN QUIZ </a>
-      </header>
-    </div>
-      <div class= "tile is-parent" >
+        <header class="notification is-success">
+          <h1 class="title">Learn your Multiplication</h1>
+          <h2 class="subtitle">Math can be fun after all!</h2>
+          <a href="quiz.html"> FUN QUIZ </a>
+        </header>
+      </div>
+      <div class="tile is-parent">
         <div class="tile is-child box">
           <span class="tag is-medium is-primary">Table 1</span>
           <ul id="tab1"></ul>
@@ -45,24 +48,6 @@
           <ul id="tab6"></ul>
         </div>
       </div>
-      <div class="tile is-parent is-vertical">
-        <footer id="quiz" class="notification is-info quiz">
-          <h3>Try it yourself</h3>
-          <form id="">
-          <input class="input is-success" id="num1" type="text" placeholder="input a number" autocomplete="off"></input><br/>
-          <button class="button is-link">X</button><br/>
-          <input class=" input is-warning" id="num2" type="text" value=""></input><br/>
-          <button class="button is-link">=</button><br/>
-          <input class=" input is-danger" id="ans" type="text" value=""></input><br/>
-          </form>
-          <p id="right"></p> 
-          <p id="wrong"></p>
-          <button class="button is-warning" id="check">Check Answer</button>
-          <button class="button is-success" onclick="goBack()"> Back to Tables</button><br/>
-          
-        </footer>
-      </div>
     </div>
-    
   </body>
 </html>

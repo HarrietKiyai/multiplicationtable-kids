@@ -25,9 +25,11 @@ function createTable() {
     table6 += "<li>" + i + "x " + 6 + " = " + i * 6 + "</li>";
     document.getElementById("tab6").innerHTML = table6;
   }
-  $(".box").css("background-color", "#ff00ff");
+  $(".box")
+    .css("background-color", "#ff00ff")
+    .css("border-radius", "25px");
   $("header").css("background-color", "#FF6666");
-  $("h1,h2").css("text-align", "center", "color", "blue");
+  $("h1,h2,h3").css("text-align", "center", "color", "blue");
 
   $(document).ready(function() {
     $("#check").click(function() {
@@ -45,11 +47,7 @@ function createTable() {
     });
   });
 
-  $("#num1").submit(function() {
-    $(this).val("");
-  });
-
-  $("body").css("background-image", 'url("para.png")');
+  $("body").css("background-image", 'url("bubs.png")');
   $(".container").css("background-color", "#DEF2F1");
 }
 

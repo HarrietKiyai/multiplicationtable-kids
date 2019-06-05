@@ -1,5 +1,9 @@
 body {
-    background-color: #80ced6;
+    background-image: url("para.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
 }
 

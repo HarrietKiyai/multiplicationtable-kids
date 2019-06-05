@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>quiz</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tile is-parent is-vertical">
+      <footer id="quiz" class="notification is-info quiz">
+          <h3>Try it yourself</h3>
+        
+    <form id="" class="tile is-parent">
+        <div class="tile is-child box">
+          <input class="input is-success" id="num1" type="text" placeholder="enter a number" autocomplete="off"></input><br/>
+        </div>
+        <div class="tile is-child box">
+          <button class="button is-link">X</button><br/>
+        </div>
+        <div class="tile is-child box">
+          <input class=" input is-warning" id="num2" type="text" placeholder="enter a number" autocomplete="off"></input><br/>
+        </div>
+        <div class="tile is-child box">
+          <button class="button is-link">=</button><br/>
+        </div>
+        <div class="tile is-child box">
+          <input class=" input is-danger" id="ans" type="text" value=""></input><br/>
+        </div>
+      </form>
+        <div>
+          <p id="right"></p> 
+          <p id="wrong"></p>
+          <button class="button is-warning" id="check">Check Answer</button>
+          <button class="button is-success" onclick="goBack()"><a href="index.html">Back to Tables</a></button><br/>
+          </div>
+        </div>
+      </footer>
+        
+    </div>
+</body>
+</html>

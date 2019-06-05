@@ -33,6 +33,7 @@ function createTable() {
 
   $(document).ready(function() {
     $("#check").click(function() {
+      alert("test");
       var a = parseInt($("#num1").val());
       var b = parseInt($("#num2").val());
       if ($("#ans").val() == a * b) {
